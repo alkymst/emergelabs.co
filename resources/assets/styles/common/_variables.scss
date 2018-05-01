@@ -1,38 +1,38 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
-// EBB - Light shades
-$Ebb: #eeeceb;
-// PICTON BLUE - Light accent
-$PictonBlue: #139deb;
-// MATISSE - Main brand color
-$Matisse: #2468ae;
-// SIROCCO - Dark accent
-$Sirocco: #737c7b;
-// BASTILLE - Dark shades
-$Bastille: #19161d;
+// ATHENS GRAY - Light shades
+$AthensGray: #f1f1f3;
+// POLO BLUE - Light accent
+$PoloBlue: #8ab2d1;
+// ROYAL BLUE - Main brand color
+$RoyalBlue: #525ddc;
+// WAIKAWA GRAY - Dark accent
+$WaikawaGray: #53609c;
+// MIRAGE - Dark shades
+$Mirage: #1d253a;
 // Success
-$OceanGreen: #409a6c;
+$AquaForest: #4f967b;
 // Warning
-$Copper: #bd8a34;
+$RawSienna: #cc8543;
 // Danger
 $Pomegranate: #f44336;
 
 // theme colors
 $theme-colors: (
-  primary: $Matisse,
-  success: $OceanGreen,
-  info: $Bastille,
-  warning: $Copper,
+  primary: $RoyalBlue,
+  success: $AquaForest,
+  info: $Mirage,
+  warning: $RawSienna,
   danger: $Pomegranate,
-  light: $Ebb,
-  dark: $Bastille,
-  light-accent: $PictonBlue,
-  dark-accent: $Sirocco
+  light: $AthensGray,
+  dark: $Mirage,
+  light-accent: $PoloBlue,
+  dark-accent: $WaikawaGray
 );
 
-$body-bg: rgba(6, 25, 38, 1);
-$body-color: $Ebb;
+$body-bg: theme-color("light");
+$body-color: theme-color("dark");
 
 // Links
 //
@@ -49,7 +49,7 @@ $font-size-base: 1rem;
 // $headings-font-family:     'abril-display', serif;
 $headings-font-weight: 600;
 $headings-line-height: 1.2;
-$headings-color: theme-color("light");
+$headings-color: theme-color("dark-accent");
 
 $h1-font-size: $font-size-base * 3;
 $h2-font-size: $font-size-base * 2.5;
