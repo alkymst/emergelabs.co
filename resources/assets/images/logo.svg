@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 395 46" 
+    xmlns="http://www.w3.org/2000/svg">
+    <title>Emerge Labs</title>
+    <g fill="none" fill-rule="evenodd" font-family="Michroma" font-size="48">
+        <text>
+            <tspan x="-4" y="36" fill="#525DDC">Emerge</tspan>
+            <tspan x="238.25" y="36" fill="#000000"></tspan>
+            <tspan x="248.75" y="36" fill="#262C43">Labs</tspan>
+        </text>
+    </g>
+</svg>

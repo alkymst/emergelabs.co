@@ -1,0 +1,81 @@
+.banner {
+  position: relative;
+  z-index: 25;
+}
+
+.banner .container {
+  display: flex;
+}
+
+
+// branding
+.brand {
+  z-index: 100;
+}
+
+.brand a {
+  display: block;
+  width: 80px;
+  height: $navbar-brand-height;
+  background: url(/assets/images/logo.svg) center center no-repeat;
+  background-size: contain;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  z-index: 100;
+}
+
+
+// navigation
+.nav-primary {
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
+  margin-right: -50vw;
+  margin-bottom: 0;
+  margin-left: -50vw;
+  font-size: .65rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+}
+
+.nav-primary a {
+  display: block;
+  padding: 1rem .7rem;
+}
+
+.nav-primary .nav {
+  list-style: none;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-primary .nav li {
+  position: relative;
+}
+
+.nav-primary .nav > li > a {
+  text-transform: uppercase;
+  border: none;
+  color: $Ebb;
+}
+
+.nav-primary .nav > li:hover > a {
+  background: theme-color('primary');
+  color: $white;
+  font-weight: bold;
+}
+
+@include media-breakpoint-up(md) {
+  .brand a {
+    width: 120px;
+    height: 40px;
+  }
+  .nav-primary a {
+    padding: 1rem;
+  }
+}

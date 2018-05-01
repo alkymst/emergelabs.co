@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main class="main">
+  <section class="masthead w-img d-50 text-center">
+    <div class="container d-flex justify-content-center h-100">
+      <div class="row justify-content-center align-self-center p-3">
+        <h2 class="text-light mt-5 d-xs-inline-block text-center">{{.Title}}</h2>
+      </div>
+    </div>
+  </section>
+  <div class="container py-5">
+    {{ .Content }}
+  </div>
+</main>
+{{ end }}

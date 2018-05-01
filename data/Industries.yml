@@ -1,0 +1,11 @@
+list:
+  - name: Advertisement
+    icon: fa-bicycle
+  - name: Automotive
+    icon: fa-bicycle
+  - name: eCommerce
+    icon: fa-bicycle
+  - name: Health Care
+    icon: fa-bicycle
+  - name: Legal
+    icon: fa-bicycle

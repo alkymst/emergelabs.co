@@ -1,0 +1,106 @@
+{{ define "main" }}
+<main class="main">
+
+  <section class="masthead w-img d-50 text-center">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center p-3">
+        <div class="small text-right">{{ .Content }}</div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="navbar-dark bg-dark py-2">
+    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-project-inquiry-tab" data-toggle="tab" href="#nav-project-inquiry" role="tab"
+        aria-controls="nav-project-inquiry" aria-selected="true">Project Inquiry</a>
+      <a class="nav-item nav-link" id="nav-hello-tab" data-toggle="tab" href="#nav-hello" role="tab" aria-controls="nav-hello"
+        aria-selected="false">Say Hello</a>
+    </div>
+  </nav>
+  <div class="bg-light text-dark py-4">
+    <div class="tab-content container" id="nav-tabContent">
+      <div class="tab-pane fade show active col align-self-center" id="nav-project-inquiry" role="tabpanel" aria-labelledby="nav-project-inquiry-tab">
+        <h3 class="text-dark mb-4">Project Inquiry</h3>
+        <form name="project-inquiry" method="POST" netlify>
+          <div class="form-group">
+            <label for="full-name">Full name</label>
+            <input type="text" class="form-control" name="full-name" id="full-name" aria-describedby="full-name-help" placeholder="Full Name"
+              required>
+            <small id="full-name-help" class="form-text text-muted">Please use your full name.</small>
+          </div>
+          <div class="form-group">
+            <label for="email-address">Email Address</label>
+            <input type="email" class="form-control" name="email-address" id="email-address" aria-describedby="emailHelpId" placeholder="Email Address"
+              required>
+            <small id="emailHelpId" class="form-text text-muted">Enter your email address.</small>
+          </div>
+          <div class="form-group">
+            <label for="organization">Organization</label>
+            <input type="text" class="form-control" name="organization" id="organization" aria-describedby="organization-help" placeholder="Organization">
+            <small id="organization-help" class="form-text text-muted">Please enter your organization or business.</small>
+          </div>
+          <div class="form-group">
+            <label for="how-can-i-help">How can I help?</label>
+            <textarea class="form-control" name="how-can-i-help" id="how-can-i-help" aria-describedby="how-can-i-help-text" rows="3"></textarea>
+            <small id="how-can-i-help-text" class="form-text text-muted">A general project summary is fine.</small>
+          </div>
+          <div class="form-group">
+            <label for="">Project Budget</label>
+            <select class="custom-select" name="project-budget" id="project-budget" aria-describedby="project-budget-text">
+              <option selected>Select one</option>
+              <option value="10k">$1k-10k</option>
+              <option value="25k">$10k-25k</option>
+              <option value="50k">$25k-50k</option>
+              <option value="100k">$50k-100k</option>
+              <option value="baller">Over $100k</option>
+            </select>
+            <small id="project-budget-text" class="form-text text-muted">I can find a creative solution for any budget.</small>
+          </div>
+          <div class="form-group">
+            <label for="">Timeline</label>
+            <select class="custom-select" name="timeline" id="timeline" aria-describedby="timeline-text">
+              <option selected>Select one</option>
+              <option value="week">1 week</option>
+              <option value="month">1 month</option>
+              <option value="quarter">3-4 months</option>
+              <option value="year">6-12 months</option>
+              <option value="forever">Ongoing Engagement</option>
+            </select>
+            <small id="timeline-text" class="form-text text-muted">Select the timeline that best fits your situation.</small>
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </div>
+        </form>
+
+      </div>
+      <div class="tab-pane fade col align-self-center" id="nav-hello" role="tabpanel" aria-labelledby="nav-hello-tab">
+        <h3 class="text-dark mb-4">Say Hello</h3>
+        <form name="contact-inquiry" method="POST" netlify>
+          <div class="form-group">
+            <label for="full-name">Full name</label>
+            <input type="text" class="form-control" name="full-name" id="full-name" aria-describedby="full-name-help" placeholder="Full Name"
+              required>
+            <small id="full-name-help" class="form-text text-muted">Please use your full name.</small>
+          </div>
+          <div class="form-group">
+            <label for="email-address">Email Address</label>
+            <input type="email" class="form-control" name="email-address" id="email-address" aria-describedby="emailHelpId" placeholder="Email Address"
+              required>
+            <small id="emailHelpId" class="form-text text-muted">Enter your email address.</small>
+          </div>
+          <div class="form-group">
+            <label for="how-can-i-help">How can I help?</label>
+            <textarea class="form-control" name="how-can-i-help" id="how-can-i-help" rows="3"></textarea>
+          </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</main>
+{{ end }}

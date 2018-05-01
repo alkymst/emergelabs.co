@@ -1,0 +1,68 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+// EBB - Light shades
+$Ebb: #eeeceb;
+// PICTON BLUE - Light accent
+$PictonBlue: #139deb;
+// MATISSE - Main brand color
+$Matisse: #2468ae;
+// SIROCCO - Dark accent
+$Sirocco: #737c7b;
+// BASTILLE - Dark shades
+$Bastille: #19161d;
+// Success
+$OceanGreen: #409a6c;
+// Warning
+$Copper: #bd8a34;
+// Danger
+$Pomegranate: #f44336;
+
+// theme colors
+$theme-colors: (
+  primary: $Matisse,
+  success: $OceanGreen,
+  info: $Bastille,
+  warning: $Copper,
+  danger: $Pomegranate,
+  light: $Ebb,
+  dark: $Bastille,
+  light-accent: $PictonBlue,
+  dark-accent: $Sirocco
+);
+
+$body-bg: rgba(6, 25, 38, 1);
+$body-color: $Ebb;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: theme-color("primary");
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+// Fonts
+$font-size-base: 1rem;
+// $font-family-sans-serif:   'Montserrat', sans-serif;
+// $headings-font-family:     'abril-display', serif;
+$headings-font-weight: 600;
+$headings-line-height: 1.2;
+$headings-color: theme-color("light");
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.75;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+// Paragraphs
+$paragraph-margin-bottom: 1rem;
+
+// Navs
+// this might effect too much - not sure where else I would use it
+$nav-tabs-border-width: 0;
+$nav-tabs-link-active-color: theme-color("light");
+$nav-tabs-link-active-bg: transparent;

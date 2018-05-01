@@ -1,0 +1,20 @@
+<article class="blog summary bg-dark justify-content-center mt-3 mt-md-4 text-white overflow-hidden">
+  <div class="blog-bk summary-bk h-100 w-100" style="background-image: url(/assets/images/smartmockups_jenlhr5k.jpeg);"></div>
+  <a href="{{.RelPermalink}}" class="d-block w-100 h-100 pt-3 px-3">
+    <header class="m-3 py-1">
+      <div class="w-75 mb-4">
+        <span class="badge badge-secondary">WordPress</span>
+        <span class="badge badge-secondary">Development</span>
+        <span class="badge badge-secondary">Job Manager Pro</span>
+      </div>
+      <h2 class="display-5 text-light mb-0">{{.Title}}</h2>
+      <time class="small text-light" datetime="2018-05-16 19:00">May 16, 2018</time>
+    </header>
+    <footer>
+      <button class="m-3 btn btn-outline-secondary">Read More</button>
+      {{ with .ReadingTime}}
+      <p class="m-3">{{ . }} MIN READ</p>
+      {{ end }}
+    </footer>
+  </a>
+</article>

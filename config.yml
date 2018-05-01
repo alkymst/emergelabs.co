@@ -1,0 +1,19 @@
+---
+baseURL: 'https://emergelabs.co'
+languageCode: en-us
+title: Emerge Labs | WordPress Development Done Right
+enableRobotsTXT: true
+googleAnalytics: ''
+watch: true
+layoutDir: resources/views
+staticDir: dist
+relativeurls: true
+params:
+  name: Emerge Labs
+  location: 'Colorado'
+permalinks:
+  posts: '/:title/'
+  projects: '/work/:title/'
+  tags: '/blog/:title/'
+  categories: '/blog/:title/'
+---

@@ -1,0 +1,26 @@
+.summary {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  @include media-breakpoint-up(md) {
+    height: 500px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 48%;
+  }
+}
+.summary a {
+  position: relative;
+  z-index: 2;
+}
+.summary-bk {
+  position: absolute;
+  // animation: fadeIn 1s ease-in-out;
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+  right: 0;
+  top: 0;
+}

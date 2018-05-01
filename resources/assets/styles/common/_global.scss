@@ -1,0 +1,66 @@
+h1 {
+  font-family: $headings-font-family;
+  font-weight: 400;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.font-primary {
+  font-family: $font-family-sans-serif;
+}
+
+.font-size-85 {
+  font-size: .85rem;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.border-center {
+  position: relative;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    background: theme-color("primary");
+  }
+
+  &:before {
+    margin-left: -50%;
+    right: .5rem;
+  }
+
+  &:after {
+    margin-right: -50%;
+    left: .5rem;
+  }
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: $headings-font-family;
+  font-weight: 400;
+}
+
+.break-word {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
